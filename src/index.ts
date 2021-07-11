@@ -66,5 +66,5 @@ app.post('/register', async (req:Request, res:Response, next:NextFunction) => {
 
 mongoose
   .connect(`${process.env.TODO_MONGODB_URL}`)
-  .then(() => (app.listen(port, () => console.log(`🍕 server running: ${port}`))))
+  .then(() => (app.listen(port, () => console.log(`🍕 server running on: ${port}`))))
   .catch((error: Error) => console.log(error))
